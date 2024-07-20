@@ -1,0 +1,48 @@
+.feed-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+
+    height: 120px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    flex: 1; /* text-container가 남은 공간을 차지하도록 설정 */
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 추가: 제목과 교환 태그 사이에 여유 공간 */
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px; /* 제목이 차지할 수 있는 최대 너비를 설정 */
+    flex: 1;
+}
+
+.time-display {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 5px 0px 0px 0px;
+}
+
+.feed-container img {
+    border-radius: 10%;
+
+    align-items: center;
+
+    width: 115px;
+    height: 115px;
+}

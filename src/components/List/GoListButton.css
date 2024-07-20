@@ -1,0 +1,17 @@
+.goListButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(125,125,125, 0.5); /* 반투명 */
+    color: black;
+    border: none;
+    padding: 20px 20px;
+    cursor: pointer;
+    z-index: 1; /* 이미지 위에 표시되도록 설정 */
+    border-radius: 50%;
+    text-transform: uppercase;
+}
+
+.goListButton:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}

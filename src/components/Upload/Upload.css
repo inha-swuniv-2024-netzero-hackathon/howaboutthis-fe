@@ -1,0 +1,108 @@
+.upload-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.upload-container .image-box {
+    width: 500px; 
+    height: 500px; 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.image-box img {
+    border-radius: 10%;
+    align-items: center;
+    width: 100%; /* 이미지의 너비를 부모 요소에 맞추기 */
+    height: 100%; /* 높이를 자동으로 설정 */
+    max-width: 100%; /* 이미지의 최대 너비를 부모 요소의 너비에 맞추기 */
+    max-height: 100%; /* 이미지의 최대 높이를 부모 요소의 높이에 맞추기 */
+    object-fit: contain;
+}
+
+.upload-container .form-group {
+    width: 100%;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.form-group .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.form-group .explain {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.form-group .PW {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.form-group .SlackId {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.form-group input {
+    color: #999;
+    border-width: 0 0 1px;
+    width: 90%;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.upload-container .bottom-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.file-input-wrapper {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.file-input-wrapper input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-file-input {
+    width: 600px;
+    height: 600px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+}
